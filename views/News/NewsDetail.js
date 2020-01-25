@@ -75,7 +75,7 @@ export class NewsDetail extends React.Component {
                         >
                         </Image>
                         <View style={{ padding: 15, }}>
-                            <Text style={[ styles.text_font, { fontSize: 20, color: '#ff9900', }]}>
+                            <Text style={[ styles.text_font, { fontSize: 20, color: '#ff9999', }]}>
                                 {this.state.news.news_title} <Text style={[ styles.text_font, { fontSize: 14, color: 'grey', }]}>{this.state.news.news_date}</Text>
                             </Text>
                         </View>

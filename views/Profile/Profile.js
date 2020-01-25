@@ -95,7 +95,7 @@ export default class Profile extends React.Component {
                         {this.state.user_data.user_address != '' ? 
                         <View style={{ flexDirection: 'row', marginBottom: 8, }}>
                             <View style={{ flexDirection: 'column', }}>
-                                <Icon name="map-marker-outline" style={{ fontSize: 16, color: "#ff9900", marginTop: 3, }}></Icon>
+                                <Icon name="map-marker-outline" style={{ fontSize: 16, color: "#0f4c75", marginTop: 3, }}></Icon>
                             </View>
                             <View style={{ flexDirection: 'column', }}>
                                 <Text style={[ styles.text_font, { marginLeft: 8, } ]}>{this.state.user_data.user_address}</Text>
@@ -106,7 +106,7 @@ export default class Profile extends React.Component {
                         {this.state.user_data.user_tel != '' ? 
                         <View style={{ flexDirection: 'row', marginBottom: 8, }}>
                             <View style={{ flexDirection: 'column', }}>
-                                <Icon name="phone" style={{ fontSize: 16, color: "#ff9900", marginTop: 3, }}></Icon>
+                                <Icon name="phone" style={{ fontSize: 16, color: "#0f4c75", marginTop: 3, }}></Icon>
                             </View>
                             <View style={{ flexDirection: 'column', }}>
                                 <Text style={[ styles.text_font, { marginLeft: 8, } ]}>{this.state.user_data.user_tel}</Text>
@@ -117,7 +117,7 @@ export default class Profile extends React.Component {
                         {this.state.user_data.user_email != '' ? 
                         <View style={{ flexDirection: 'row', marginBottom: 8, }}>
                             <View style={{ flexDirection: 'column', }}>
-                                <Icon name="at" style={{ fontSize: 16, color: "#ff9900", marginTop: 3, }}></Icon>
+                                <Icon name="at" style={{ fontSize: 16, color: "#0f4c75", marginTop: 3, }}></Icon>
                             </View>
                             <View style={{ flexDirection: 'column', }}>
                                 <Text style={[ styles.text_font, { marginLeft: 8, } ]}>{this.state.user_data.user_email}</Text>
