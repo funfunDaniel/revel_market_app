@@ -97,6 +97,7 @@ export default class News extends React.Component {
                 }
             }
         }
+        
 
         return (
             <Content style={{ backgroundColor: '#010001', }}>
