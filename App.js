@@ -27,7 +27,7 @@ const HomeNavigation = createStackNavigator({
         color: '#f3f3f3'
       },
       headerStyle: {
-        backgroundColor: '#010001',
+        backgroundColor: '#0f4c75',
       },
     }
   },
@@ -43,7 +43,7 @@ const HomeNavigation = createStackNavigator({
         color: '#f3f3f3'
       },
       headerStyle: {
-        backgroundColor: '#010001',
+        backgroundColor: '#0f4c75',
       },
     }
   },

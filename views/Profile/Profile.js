@@ -128,14 +128,14 @@ export default class Profile extends React.Component {
                         <TouchableOpacity
                             style={{
                                 alignSelf: 'center',
-                                backgroundColor: '#fff',
+                                backgroundColor: '#0f4c75',
                                 width: 140,
                                 padding: 8,
                                 marginTop: 16,
                                 borderRadius: 30,
                             }}
                             onPress={() => this._confirmLogout()}>
-                            <Text style={[ styles.text_font, { alignSelf: 'center', color: '#000', }]}>
+                            <Text style={[ styles.text_font, { alignSelf: 'center', color: '#bbe1fa', }]}>
                                 ลงชื่อออก
                             </Text>
                         </TouchableOpacity>
@@ -145,7 +145,7 @@ export default class Profile extends React.Component {
         }
 
         return (
-            <ScrollView style={{ backgroundColor: '#010001', }}>
+            <ScrollView style={{ backgroundColor: '#3282b8', }}>
                 {display_data}
             </ScrollView>
         );
@@ -155,7 +155,7 @@ export default class Profile extends React.Component {
 const styles = StyleSheet.create({
 	text_font: {
 		fontSize: 16,
-        color: '#fff',
+        color: '#bbe1fa',
     },
     profile_frame: {
         width: 120, 
@@ -164,7 +164,7 @@ const styles = StyleSheet.create({
         marginTop: 28,
         marginBottom: 28,
         alignSelf: 'center', 
-        backgroundColor: '#25aae1',
+        backgroundColor: '#0f4c75',
         borderRadius: 60
     },
     profile_image: {
