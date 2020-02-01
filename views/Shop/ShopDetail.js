@@ -43,11 +43,11 @@ export class ShopDetail extends React.Component {
                         alert: 'network-failed',
                     });
                 }else if (response.data.length == 0) {
-                    // this.setState({
-                    //     loading: false,
-                    //     alert: 'not-found',
-                    // });
-                    this.props.navigation.goBack();
+                    this.setState({
+                        loading: false,
+                        alert: 'not-found',
+                    });
+                    // this.props.navigation.goBack();
                 }else{
                     this.setState({ 
                         loading: false,
