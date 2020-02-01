@@ -7,6 +7,7 @@ import {
     TextInput,
     TouchableOpacity,
     View,
+    Alert
 } from 'react-native';
 import {
     Header,
@@ -63,7 +64,8 @@ export default class Shop extends React.Component {
     }
 
 
-    _onQRCodeScanDone = (qr_code) => {
+    _onQRCodeScanDone = (qr_code) => {      // รับค่า qrcode
+        Alert.alert("QR Code" , "Qr Code :" + qr_code );
         if (qr_code != '') {
             this.setState({
                 isCameraVisible:false
@@ -142,7 +144,9 @@ export default class Shop extends React.Component {
                         laserColor={'#FF3D00'}
                         frameColor={'#00C853'}
                         colorForScannerFrame={'black'}
-                        onReadCode={(event) => { this._onQRCodeScanDone(event.nativeEvent.codeStringValue) }}
+                        onReadCode={(event) => { 
+                            
+                            this._onQRCodeScanDone(event.nativeEvent.codeStringValue) }}
                     />
 
                     :
