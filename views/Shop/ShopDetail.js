@@ -96,14 +96,14 @@ export class ShopDetail extends React.Component {
                             {this.state.shop.shop_address != '' ? 
                             <View style={{ flexDirection: 'row', marginBottom: 4 }}>
                                 <Icon name="map-marker" size={15} style={{ color: 'red', marginTop: 2 }} />
-                                <Text style={[ styles.text_font, { color: '#e6e6e6', fontSize: 14, marginLeft: 10 }]}>{this.state.shop.shop_address}</Text>
+                                <Text style={[ styles.text_font, { color: '#3282b8', fontSize: 14, marginLeft: 10 }]}>{this.state.shop.shop_address}</Text>
                             </View>
                             : null
                             }
                             {this.state.shop.shop_tel != '' ? 
                             <View style={{ flexDirection: 'row', }}>
                                 <Icon name="cellphone-android" size={15} style={{ color: '#2899f2', marginTop: 2 }} />
-                                <Text style={[ styles.text_font, { color: '#e6e6e6', fontSize: 14, marginLeft: 10 }]}>{this.state.shop.shop_tel}</Text>
+                                <Text style={[ styles.text_font, { color: '#3282b8', fontSize: 14, marginLeft: 10 }]}>{this.state.shop.shop_tel}</Text>
                             </View>
                             : null
                             }
@@ -114,7 +114,7 @@ export class ShopDetail extends React.Component {
         }
 
         return (
-            <ScrollView style={{ backgroundColor: '#3282b8', }}>
+            <ScrollView style={{ backgroundColor: '#f3f3f3', }}>
                 <StatusBar hidden={true} />
                 {display_data}
             </ScrollView>
@@ -126,6 +126,6 @@ const styles = StyleSheet.create({
 	text_font: {
 		fontFamily: 'Kanit-Regular',
 		fontSize: 16,
-        color: '#bbe1fa',
+        color: '#0f4c75',
     },
 });

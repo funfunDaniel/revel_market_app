@@ -88,7 +88,7 @@ export default class News extends React.Component {
                                 </TouchableOpacity>
                             </View>
                             <View style={{ flex: 1, flexDirection: 'column', paddingLeft: 10 }} >
-                                <Text style={[ styles.text_font, { fontSize: 18, color: '#ff9999', }]} numberOfLines={1}>{this.state.news[i].news_title}</Text>
+                                <Text style={[ styles.text_font, { fontSize: 18, color: '#0f4c75', }]} numberOfLines={1}>{this.state.news[i].news_title}</Text>
                                 <Text style={[ styles.text_font, { fontSize: 12, color: 'gray', }]}>{this.state.news[i].news_date}</Text>
                                 <Text style={[ styles.text_font, { fontSize: 14, } ]} numberOfLines={4}>{this.state.news[i].news_description}</Text>
                             </View>
@@ -100,7 +100,7 @@ export default class News extends React.Component {
         
 
         return (
-            <Content style={{ backgroundColor: '#3282b8', }}>
+            <Content style={{ backgroundColor: '#f3f3f3', }}>
                 <Header style={{ backgroundColor: '#0f4c75' }}>
                     <ImageBackground 
                         resizeMode='cover' 
@@ -121,6 +121,6 @@ export default class News extends React.Component {
 const styles = StyleSheet.create({
 	text_font: {
         fontSize: 16,
-        color: '#bbe1fa',
+        color: '#3282b8',
     },
 });

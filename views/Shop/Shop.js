@@ -108,7 +108,7 @@ export default class Shop extends React.Component {
         }
         return (
             <>
-                <Header style={{ backgroundColor: '#010001', }}>
+                <Header style={{ backgroundColor: '#0f4c75', }}>
                     <ImageBackground
                         resizeMode='cover'
                         source={require('../../images/bghead.png')}
@@ -118,19 +118,19 @@ export default class Shop extends React.Component {
                     </ImageBackground>
                 </Header>
                 <View style={{ padding: 12, }}>
-                    <View style={[{ height: 48, backgroundColor: '#474648', flexDirection: 'row', borderRadius: 25, elevation: 3, }]}>
+                    <View style={[{ height: 48, backgroundColor: '#3282b8', flexDirection: 'row', borderRadius: 25, elevation: 3, }]}>
                         <TextInput style={[styles.text_font, { flex: 1, paddingLeft: 18, }]}
                             placeholder="What are you looking for ?"
-                            placeholderTextColor="#979697"
+                            placeholderTextColor="#f3f3f3"
                             underlineColorAndroid="transparent"
                             onChangeText={(keyword) => { this.setState({ keyword }) }}
                             value={this.state.keyword}
                         />
                         <TouchableOpacity style={{ width: 50, height: 60, }} onPress={() => { this.setState({ isCameraVisible: true }) }}>
-                            <Icon name="qrcode" size={28} style={{ color: '#979697', marginTop: 10, }} />
+                            <Icon name="qrcode" size={28} style={{ color: '#f3f3f3', marginTop: 10, }} />
                         </TouchableOpacity>
                         <TouchableOpacity style={{ width: 50, height: 60, }} onPress={() => { this._fetchData() }}>
-                            <Icon name="magnify" size={28} style={{ color: '#979697', marginTop: 10, }} />
+                            <Icon name="magnify" size={28} style={{ color: '#f3f3f3', marginTop: 10, }} />
                         </TouchableOpacity>
                     </View>
                 </View>
